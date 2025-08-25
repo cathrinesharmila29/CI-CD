@@ -34,7 +34,7 @@ pipeline {
                 sh 'docker rm myapp-container || true'
 
                 // Run the new container with the latest image
-                sh 'docker run -d --name myapp-container -p 8000:8000 nayan6244/flaskapp:$BUILD_NUMBER'
+                sh 'docker run -d --name myapp-container -p 8000:8000 cathrine29/flaskapp:$BUILD_NUMBER'
             }
         }
     }
